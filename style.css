@@ -1,0 +1,77 @@
+*{
+    padding:0;
+    margin: 0;
+}
+:root{
+    --textFont:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --textColor: #252525;
+    --lightTextColor: #ffffff;
+}
+
+
+
+@keyframes moveText {
+    0%{
+     opacity: 0;
+     top:50%;
+    }
+    50%{
+        opacity: 0.2;
+    }
+    100%{
+     opacity: 1;
+     top:40%;
+    }
+}
+.text{
+    position: absolute;
+    text-align: center;
+    color: var(--textColor);
+    opacity: 0;
+    animation: moveText 0.5s ease-out forwards;
+    font-family: var(--textFont)
+
+}
+
+.container{
+    background-image: url("https://www.freecodecamp.org/news/content/images/size/w2000/2021/06/w-qjCHPZbeXCQ-unsplash.jpg");
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.container2{
+    background-color: #252525;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.container3{
+    background-color: beige;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.ctext2{
+  color: var(--lightTextColor);
+  font-family: var(--textFont);
+  opacity: 0;
+}
+.ctext3{
+    opacity: 0;
+    color: var(--textColor);
+    font-family: var(--textFont);
+}
+.hitAnimation{
+    position: absolute;
+    text-align: center;
+    
+    animation: moveText 0.5s ease-out forwards;
+}
